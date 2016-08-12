@@ -1,14 +1,28 @@
-# Welcome to Jekyll!
-# Site settings
-title: Something Creative 
-email: contact@createsomethingcreative.com
-description: > # this means to ignore newlines until "baseurl:"
- Cause our lives are dope and we do dope shit. 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://createsomethingcreative.com" # the base hostname & protocol for your site
-twitter_username: somethingcreative
-github_username:  something-creative
+title: Something Creative
+description: Life is hard. Have an award. 
 
-# Build settings
+url: http://createsomethingcreative.com
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
 markdown: kramdown
-theme: minima
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
+
+social:
+   github: something-creative
+   twitter: something-creative
+   facebook: something-creative
+   email: contact@createsomethingcreative.com
+
+google_analytics: "UA-58263416-1"
